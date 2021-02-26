@@ -1,0 +1,8 @@
+ <li class="nav-item ">
+            <a href="#" class="nav-link disabled pl-0" onclick="loadGallery(this)">Show all</a>
+        </li>
+        {{#each data}}
+        <li class="nav-item">
+            <a href="#" class="nav-link" onclick="loadGallery(this, {{id}})">{{name}}</a>
+        </li>
+        {{/each}}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>20880008 - Ice-scream - About</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/20880008.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa+One" type="text/css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="container">
+        <nav class="navbar navbar-expand-sm navbar-light px-0">
+            <a class="navbar-brand" href="index.html" id="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav  mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 " id="frm-search">
+                    <div class="input-group input-group-sm">
+                        <input class="form-control" type="text" id="searchword" placeholder="Search">
+                        <div class="input-group-append">
+                            <button class="btn" type="submit" id="btn-search"></button>
+                        </div>
+                    </div>
+                </form>
+                <div id="social">
+                    <a href="#" class="btn twitter"> </a>
+                    <a href="#" class="btn facebook"> </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--header-->
+   
+    <div class="container-fluid" id="small-banner"></div>
+    
+   <div id="content">
+    <div class="container py-5">
+        <div class="row">
+            <!--about us-->
+            <div class="col-md-8" id="aboutus">
+               
+            </div>
+              <!--about us-->
+              <!--our vision-->
+            <div class="col-md-4" id="visions">
+               
+            </div>
+            <!--our vision-->
+        </div>
+    </div>
+    <!--testimonials-->
+    <div class="container-fluid about py-5">
+        <div class="container" id="testimonials">
+           
+        </div>
+    </div>
+     <!--testimonials-->
+
+     <!--team-->
+    <div class="container">
+        <h3 class="text-dark">Our Team</h3>
+        <div class="row" id="team">
+           
+        </div>
+    </div>
+     <!--team-->
+
+   </div>
+    <!--footer-->
+    <footer class="container-fluid ">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <div>
+            Ice-scream &copy | <a href="#" class="text-uppercase">Privacy policy</a>
+        </div>
+    </footer>
+    <!--footer-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/handlebars.runtime-v4.1.0.js"></script>
+    <script src="js/20880008.js"></script>
+    <script src="js/templates.js"></script>
+   
+       
+    </script>
+    <script>
+        $(document).ready(function(){
+          loadData('aboutus','#aboutus','aboutus-aboutus');
+          loadData('visions','#visions','aboutus-visions');
+          loadData('testimonials','#testimonials','aboutus-testimonials');
+          loadData('team','#team','aboutus-team');
+            
+        })
+    </script>
+</body>
+
+</html>

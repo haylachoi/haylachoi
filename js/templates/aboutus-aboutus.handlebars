@@ -1,0 +1,17 @@
+ {{#each data}}
+        <h3 class="text-dark">About Us</h3>
+        <img class="round-img" src="{{thumbpath}}" alt="">
+        {{{summary}}}
+        <p><a class="readmore" href="#" onclick="loadData('aboutus/{{id}}','#content','aboutus-details')">Read more</a></p>
+        {{/each}}
+    </script>
+    <script id="details-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class="container py-5 mb-5">
+            <h3 class="text-dark">{{name}}</h3>
+            <div>
+                <img class="round-img pull-left" src="{{imagepath}}" alt="">
+                {{{description}}}
+            </div>
+        </div>
+        {{/each}}
